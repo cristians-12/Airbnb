@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vertival-line{
+    border-left: 1px solid #000;
+    height: 30px;
+
+}
