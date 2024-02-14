@@ -28,7 +28,7 @@ const Sesion = () => {
       <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
           <div className="p-2 pb-8 relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-           {cerrar && <div className="p-4 mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left flex">
+            <div className="p-4 mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left flex">
               <h1 onClick={cerrarPopup} className="cursor-pointer">X</h1>
                <h3
                 className="ml-36 text-base font-bold leading-6 text-gray-900"
@@ -36,7 +36,7 @@ const Sesion = () => {
               >
                 Inicia sesión o regístrate
               </h3>
-            </div>}
+            </div>
             <hr className="mt-4"/>
             <h1 className="mt-4 font-semibold text-2xl">¡Te damos la bienvenida a Airbnb!</h1>
             {email ? <input type="text" className="ml-5 border border-spacing-1 text-gray-900 text-lg rounded-lg block w-11/12 h-12 mt-4 p-2.5 outline-none border-black"placeholder="Email" required/> 
