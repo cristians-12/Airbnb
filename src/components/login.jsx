@@ -7,9 +7,12 @@ import apple from "../img/apple.png"
 import email from "../img/email.png"
 import movil from "../img/movil.png"
 
-const Login = () => {
+const Login = ({setRegistro}) => {
 
     const [email,setEmail] = useState(false)
+    const cerrarPop = ()=>{
+      setRegistro((var1)=>!var1)
+    }
 
   return (
     <div
@@ -23,7 +26,7 @@ const Login = () => {
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
           <div className="p-2 pb-8 relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
             <div className="p-4 mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left flex">
-              <h1>X</h1>
+              <h1 onClick={cerrarPop} >X</h1>
               <h3
                 className="ml-36 text-base font-bold leading-6 text-gray-900"
                 id="modal-tittle"
